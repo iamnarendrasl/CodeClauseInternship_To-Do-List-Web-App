@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Web App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Collapsible Sections -->
+    <div id="collapsible-sections">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">To-Do List Web App</h1>
+            <p class="subtitle">Manage your tasks efficiently</p>
+        </header>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2 class="section-title">Features</h2>
+            <div class="feature-item">
+                <h3>Task Management</h3>
+                <p>Add, view, and delete tasks easily.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Responsive Design</h3>
+                <p>Works on both desktop and mobile devices.</p>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="testimonial-item">
+                <p>"This app helps me stay organized!"</p>
+                <span>- User 1</span>
+            </div>
+            <div class="testimonial-item">
+                <p>"Simple, yet effective task manager."</p>
+                <span>- User 2</span>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta">
+            <h2 class="cta-title">Start Using the App Today!</h2>
+            <button class="cta-button">Get Started</button>
+        </section>
+    </div>
+
+    <!-- To-Do Input -->
+    <div class="to-do-container">
+        <input type="text" id="task-input" placeholder="Enter a new task...">
+        <button id="add-task-button">Add Task</button>
+    </div>
+
+    <!-- Eye Icon to View/Hide Tasks -->
+    <div class="task-view">
+        <i class="fas fa-eye" id="view-tasks"></i>
+    </div>
+
+    <!-- To-Do List Container -->
+    <ul id="to-do-list"></ul>
+
+    <!-- No Tasks Message -->
+    <p id="no-tasks-message" style="display: none;">No tasks added yet.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

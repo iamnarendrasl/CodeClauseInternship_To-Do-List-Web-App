@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('images/background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+    background: rgba(76, 175, 80, 0.8); /* Slightly transparent background */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.header .title {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header .subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Features Section */
+.features {
+    background: rgba(244, 244, 244, 0.8); /* Slightly transparent background */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 0;
+    text-align: center;
+    background: rgba(51, 51, 51, 0.8); /* Slightly transparent background */
+    color: white;
+}
+
+.testimonials .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.testimonial-item p {
+    font-size: 1.2rem;
+}
+
+.testimonial-item span {
+    font-size: 1rem;
+    color: #f39c12;
+}
+
+/* Call to Action Section */
+.cta {
+    background: rgba(76, 175, 80, 0.8); /* Slightly transparent background */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta .cta-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #f39c12;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #e67e22;
+}
+
+/* To-Do Input Styles */
+.to-do-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#task-input {
+    padding: 10px;
+    width: 300px;
+    font-size: 1.2rem;
+}
+
+#add-task-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* To-Do List Styles */
+#to-do-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+    text-align: left;
+}
+
+#to-do-list li {
+    background: rgba(244, 244, 244, 0.8); /* Slightly transparent background */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 5px solid #4CAF50;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete {
+    background: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Task view (eye icon) */
+.task-view {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #4CAF50;
+    z-index: 100;
+}
+
+#view-tasks:hover {
+    color: #e67e22;
+}
+
+/* No Tasks Message */
+#no-tasks-message {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #999;
+}
+
+/* Smooth transitions for showing/hiding elements */
+#to-do-list {
+    transition: all 0.3s ease;
+}
+
+/* Hamburger Styles */
+.hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.hamburger span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Collapsible Sections */
+#collapsible-sections {
+    display: block;
+}
